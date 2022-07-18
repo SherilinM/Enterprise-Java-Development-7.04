@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="box" [ngStyle]="{'background-color':backgroundColor1, 'color':color1}">
+        <h1>BOX 1</h1>
+        <p>Color blindness (color vision deficiency) is the decreased ability to see color or differences in color. It
+            can impair tasks such as selecting ripe fruit, choosing clothing, and reading traffic lights. Color
+            blindness may make some academic activities more difficult.
+        </p>
+    </div>
+    <div class="box" [ngStyle]="{'background-color':backgroundColor2, 'color':color2}">
+        <h1>BOX 2</h1>
+        <p>However, issues are generally minor, and the colorblind automatically
+            develop adaptations and coping mechanisms. People with total color blindness (achromatopsia) may also be
+            uncomfortable in bright environments and have decreased visual acuity.
+        </p>
+    </div>
+    <div class="box" [ngStyle]="{'background-color':backgroundColor3, 'color':color3}">
+        <h1>BOX 3</h1>
+        <p>The most common cause of color blindness is an inherited problem or variation in the functionality of one or
+            more of the three classes of cone cells in the retina, which mediate color vision. Males are more likely to
+            be color blind than females, because the genes responsible for the most common forms of color blindness are
+            on the X chromosome.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <button class="button" (click)="swapColors()">
+        <p class="buttonText">CLICK TO COLORBLIND-FRIENDLY</p>
+    </button>
+</div>
